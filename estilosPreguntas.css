@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "Cabecera"
+    "Seccion"
+    "PiePag";
+    grid-template-columns: 100%;
+    grid-template-rows: 9.3em 27em 5em;
+}
+header{
+    background: black;
+    grid-area: Cabecera;
+}
+/*nav{
+    grid-area: Otros;
+}*/
+section{
+    grid-area: Seccion;
+    display: grid;
+    grid-template-areas: 
+    "Nav area";
+    grid-template-columns:20% 75%;
+    grid-template-rows: 10em;
+
+}
+nav{
+    grid-area: Nav;
+   background: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.dudas{
+    margin-top: 2em;
+    border: 1px solid black;
+}
+.dudas p{
+    margin-top: 0.3em;
+    
+}
+.blog{
+    display: block;
+    width: 8em;
+    margin-top: 1em;
+    margin-left: 2em;
+    border: 1px solid black;
+}
+article{
+    grid-area: area;
+   
+}
+article a p{
+    margin-left: 2em;
+    margin-right: 1em;
+}
+article h1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+footer{
+    grid-area: PiePag;
+    background:#000;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}

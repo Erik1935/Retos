@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "Login imagen"
+    "footer footer"; 
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: auto auto auto;
+}
+.log{
+    grid-area: Login;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3f4064;
+}
+.imagen{
+    grid-area: imagen;
+    background:#fff;
+}
+.formulario{
+    width: 50%;
+    height: 22em;
+    border-radius: 5px;
+    background: #fff;
+    margin-left: 4em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.limites{
+    width: 70%;
+   
+}
+.titulo{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.entradas input{
+    width: 100%;
+}
+.entradas p{
+    margin-top: 1.3em;
+}
+.aceptar input{
+    margin-top: 2em;
+    padding-top: 0.1em;
+    padding-bottom: 0.3em;
+    width: 100%;
+    border-radius: 7px;
+}
+.aceptar ul{
+    margin-top: 1em;
+}
+.aceptar ul li{
+    list-style: none;
+}
+.aceptar ul li a{
+    text-decoration: none;
+}
+.imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagen h1{
+    margin-top: 4em;
+}
+.imagen img{
+    width: 70%;
+    object-fit: cover;
+}
+footer{
+    grid-area: footer;
+    background: black;
+    color: #fff;
+    height: 3em;
+    
+}
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+footer nav ul {
+    display: flex;
+    
+}
+footer nav ul li{
+    margin-left: 1em;
+    list-style: none;
+}

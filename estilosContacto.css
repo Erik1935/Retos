@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    display: grid;
+    height: auto;
+    grid-template-areas: 
+    "contenido";
+    grid-template-columns:100% ;
+    grid-template-rows: auto ;
+
+}
+.cont{
+    width: 100%;
+    grid-area: contenido;
+    background-image: url("mountains-55067.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.form{
+   margin: 0 auto; 
+   width: 30%;
+   height: 31em;
+   background: #fff;
+   margin-top: 3em;
+   margin-bottom: 8em;
+   border-radius: 4px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.datos {
+    width: 60%;
+    height: auto;
+    display: flex;
+   flex-direction: column;
+   align-content: center;
+}
+.datos h1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.datos input{
+    margin-bottom: 0.5em;
+}
